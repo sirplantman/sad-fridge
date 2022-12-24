@@ -1,0 +1,25 @@
+.Header_Sad_Fridge {
+    height: 100px;
+    padding: 10px;
+}
+
+.Title_Sad_Fridge {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.h {
+    height: 2px;
+    border: 0 none;
+    background-color: #DDDDDD;
+}
+
+.h2 {
+    position: relative;
+    top: 12px;
+    width: 80%;
+    height: 2px;
+    border: 0 none;
+    background-color: #DDDDDD;
+}
