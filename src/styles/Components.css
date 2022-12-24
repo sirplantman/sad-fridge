@@ -5,7 +5,7 @@
     position: absolute; 
     left: 375px;
     top: 248px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .Recipe_Name {
