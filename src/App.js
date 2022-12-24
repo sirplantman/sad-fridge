@@ -1,16 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import Combinations from './components/Combinations';
-import Header from './components/Header';
-import AddIngredients from './components/AddIngredients'
+import logo from "./logo.svg";
+import "./App.css";
+import Combinations from "./components/Combinations";
+import Header from "./components/Header";
+import AddIngredients from "./components/AddIngredients";
 
 function App() {
-  const recipeNamesList = []
+  const recipeNamesList = [];
   return (
     <div className="App">
       <Header />
-      <Combinations recipeNameList={recipeNamesList}/>
-      <AddIngredients></AddIngredients>
+      <AddIngredients />
+      <Combinations recipeNameList={recipeNamesList} />
     </div>
   );
 }
