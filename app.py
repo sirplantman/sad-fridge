@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, json, request
 from flask_sqlalchemy import SQLAlchemy
 
 
@@ -11,10 +11,10 @@ class Recipe(db.Model):
     ingredients = db.Column(db.String(500), nullable=False)
     instructions = db.Column(db.String(2500), nullable=False)
 
+@app.route('/add', methods=['POST'])
+def add_to_db():
+    request_data = request.data
+    return request_data
 
-@app.route('/')
-def index(): 
-    return render_template('index.html')
 if __name__ == "__main__":
     app.run(debug=True)
-

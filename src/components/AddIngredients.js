@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BiX } from "react-icons/bi";
 
 const AddIngredients = () => {
   const [searchInput, setSearchInput] = useState("");
   const [searchIngredients, setSearchIngredients] = useState([]);
   const ingredients = ["apple", "banana", "sugar"];
+
+  useEffect(() => {
+    fetch('/add', {
+      method: 'POST',
+      headers: {"content-type": "application/json"},
+      body: JSON.stringify(searchIngredients),
+    }).then(res => res.json()).then(message => console.log(message))
+  }, [searchIngredients]);
 
   return (
     <div>
