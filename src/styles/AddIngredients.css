@@ -1,0 +1,39 @@
+.addIngredientWrapper {
+  position: absolute;
+
+  width: 207px;
+  height: 410px;
+
+  left: 139px;
+  top: 248px;
+  overflow-y: auto;
+}
+.ingredientList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ingredientsList {
+  background-color: #e9e8e8;
+  padding: 20px;
+  height: 292.5px;
+}
+
+.searchBar {
+  background-color: #e9e8e8;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.inputSearchBar:focus {
+  outline: none;
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
