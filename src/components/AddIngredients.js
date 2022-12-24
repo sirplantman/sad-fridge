@@ -8,10 +8,11 @@ const AddIngredients = () => {
   const ingredients = ["apple", "banana", "sugar"];
 
   useEffect(() => {
-    console.log("page mounted");
-  }, []);
-  useEffect(() => {
-    console.log(searchIngredients, "ingredients");
+    fetch('/add', {
+      method: 'POST',
+      headers: {"content-type": "application/json"},
+      body: JSON.stringify(searchIngredients),
+    }).then(res => res.json()).then(message => console.log(message))
   }, [searchIngredients]);
 
   return (
