@@ -3,6 +3,7 @@ import "./App.css";
 import Combinations from "./components/Combinations";
 import Header from "./components/Header";
 import AddIngredients from "./components/AddIngredients";
+import SadFridgeImg from "./components/SadFridgeImg";
 
 function App() {
   const recipeNamesList = [];
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <AddIngredients />
       <Combinations recipeNameList={recipeNamesList} />
+      <SadFridgeImg />
     </div>
   );
 }

@@ -11,3 +11,10 @@
 .Recipe_Name {
   padding: 0.1rem;
 }
+
+.sadFridgeImg {
+  right: "89px";
+  height: "410px";
+  top: "237px";
+  position: absolute;
+}
