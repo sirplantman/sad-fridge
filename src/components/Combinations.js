@@ -1,5 +1,5 @@
 const Combinations = () => {
-    return <div>Test</div>;
+    return <div className="Combinations"></div>;
 };
 
 export default Combinations;
