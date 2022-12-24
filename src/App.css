@@ -41,3 +41,14 @@
     transform: rotate(360deg);
   }
 }
+
+.ingredientList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
