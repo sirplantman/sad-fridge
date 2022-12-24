@@ -11,3 +11,21 @@
 .Recipe_Name {
   padding: 0.1rem;
 }
+
+.sadFridgeImg {
+  left: 1106px;
+  height: 410px;
+  top: 237px;
+  position: absolute;
+}
+
+.recipeContainer {
+  background-color: #e9e8e8;
+  width: 438px;
+  height: 370px;
+  position: absolute;
+  left: 640px;
+  top: 248px;
+  padding: 20px;
+  overflow-y: auto;
+}

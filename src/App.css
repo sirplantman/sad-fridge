@@ -3,7 +3,6 @@
 @import "./styles/AddIngredients.css";
 
 .App {
-  text-align: center;
   background-color: #faf6f0;
   height: 100vh;
 }
