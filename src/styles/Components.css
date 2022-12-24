@@ -1,5 +1,16 @@
 .Combinations {
-    background-color: red;
-    width: 10px;
-    height: 10px;
+}   
+
+.Combinations__Wrapper {
+    background-color: #E9E8E8;
+    width: 217px;
+    height: 410px;
+    position: relative;
+    left: 375px;
+    top: 248px;
+    overflow-y: scroll;
+}
+
+.Recipe_Name {
+    padding: 0.1rem;
 }
