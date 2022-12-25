@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import AddIngredients from "./components/AddIngredients";
 import SadFridgeImg from "./components/SadFridgeImg";
 import RecipeContainer from "./components/RecipeContainer";
+import Footer from "./components/Footer";
 
 function App() {
   const recipeData = [
@@ -24,10 +25,21 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <AddIngredients />
-      <Combinations recipeNameList={recipeNamesList} />
-      <RecipeContainer recipeData={recipeData} />
-      <SadFridgeImg />
+      <div className="mainContainer">
+        <div>
+          <AddIngredients />
+        </div>
+        <div>
+          <Combinations recipeNameList={recipeNamesList} />
+        </div>
+        <div>
+          <RecipeContainer recipeData={recipeData} />
+        </div>
+        <div>
+          <SadFridgeImg />
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }

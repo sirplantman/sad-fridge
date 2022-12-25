@@ -2,9 +2,6 @@
   background-color: #e9e8e8;
   width: 217px;
   height: 410px;
-  position: absolute;
-  left: 375px;
-  top: 248px;
   overflow-y: auto;
 }
 
@@ -13,19 +10,29 @@
 }
 
 .sadFridgeImg {
-  left: 1106px;
   height: 410px;
-  top: 237px;
-  position: absolute;
 }
 
 .recipeContainer {
-  background-color: #e9e8e8;
   width: 438px;
   height: 370px;
-  position: absolute;
-  left: 640px;
-  top: 248px;
   padding: 20px;
-  overflow-y: auto;
+
+  background-color: #e9e8e8;
+}
+
+.footer {
+  height: auto;
+  margin-top: 50px;
+  background-color: #e9e8e8;
+  padding: 20px;
+}
+
+.us {
+  margin: 3px;
+}
+
+.aboutUs {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ddd;
 }
