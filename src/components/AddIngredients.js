@@ -5,10 +5,9 @@ import { GoPlus } from "react-icons/go";
 const AddIngredients = () => {
   const [searchInput, setSearchInput] = useState("");
   const [searchIngredients, setSearchIngredients] = useState([]);
-  const ingredients = ["apple", "banana", "sugar"];
 
   useEffect(() => {
-    fetch('/add', {
+    fetch('/api/add', {
       method: 'POST',
       headers: {"content-type": "application/json"},
       body: JSON.stringify(searchIngredients),
