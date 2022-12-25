@@ -14,11 +14,12 @@ class Recipe(db.Model):
     description = db.Column(db.String)
 
 class Ingredients(db.Model):
-    id = db.Column(db.Integer) #add foreign key
+    id = db.Column(db.Integer, primary_key=True) #add foreign key
+    recipe_id = db.Column(db.Integer, db.ForeignKey("Recipe.id"))
     ingredients = db.Column(db.String)
     n_ingredients = db.Column(db.Integer)
 
-@app.route('/add', methods=['POST'])
+@app.route('/api/add', methods=['POST'])
 def add_to_db():
     request_data = request.data
     return request_data
