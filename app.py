@@ -19,7 +19,7 @@ class Ingredients(db.Model):
     ingredients = db.Column(db.String)
     n_ingredients = db.Column(db.Integer)
 
-@app.route('/api/add', methods=['POST'])
+@app.route('/add', methods=['POST', 'GET'])
 def add_to_db():
     request_data = request.data
     return request_data

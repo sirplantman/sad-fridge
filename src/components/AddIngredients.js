@@ -7,7 +7,7 @@ const AddIngredients = () => {
   const [searchIngredients, setSearchIngredients] = useState([]);
 
   useEffect(() => {
-    fetch('/api/add', {
+    fetch('/add', {
       method: 'POST',
       headers: {"content-type": "application/json"},
       body: JSON.stringify(searchIngredients),
