@@ -1,11 +1,7 @@
 .addIngredientWrapper {
-  position: absolute;
-
   width: 207px;
   height: 410px;
 
-  left: 139px;
-  top: 248px;
   overflow-y: auto;
 }
 .ingredientList {

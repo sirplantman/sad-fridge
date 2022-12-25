@@ -5,7 +5,7 @@ const RecipeContainer = (props) => {
   return (
     <div className="recipeContainer">
       <p>Steps For Recipe</p>
-      <div>
+      <div style={{ overflowY: "auto", height: "280px" }}>
         {props.recipeData.map((step, idx) => {
           return (
             <div key={idx}>
