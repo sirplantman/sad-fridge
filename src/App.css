@@ -7,6 +7,13 @@
   height: 100vh;
 }
 
+.mainContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
