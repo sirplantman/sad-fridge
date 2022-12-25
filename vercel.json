@@ -1,18 +1,12 @@
 {
     "builds": [
-        {
-            "src": "src/api/index.py",
-            "use": "@vercel/python"
-        },
-        {
-            "src": "*.js",
-            "use": "@vercel/node"
-        }
+        {"src": "/src/api/index.py","use": "@vercel/python"},
+        {"src": "package.json", "use": "@now/static-build"}
     ],
     "routes": [
         {
             "src": "src/(.*)",
-            "dest": "api/index.py"
+            "dest": "src/api/index.py"
         }
     ]
 }
